@@ -18,7 +18,7 @@ const Portfolio: React.FC = () => {
 
   const experiences = [
     {
-      role: "Software Test Engineer",
+      role: "Associate Software Engineer",
       company: "Attivo Technology Solutions",
       period: "June 2025 – Present",
       description:
