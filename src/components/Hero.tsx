@@ -73,9 +73,18 @@ const Hero: React.FC = () => {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
-            <button className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 rounded-full font-medium transition-all duration-200 transform hover:scale-105 shadow-lg hover:shadow-xl">
-              View My Work
-            </button>
+            <button
+  onClick={() => {
+    const element = document.getElementById("portfolio"); // 👈 make sure your portfolio section has id="portfolio"
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  }}
+  className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 rounded-full font-medium transition-all duration-200 transform hover:scale-105 shadow-lg hover:shadow-xl"
+>
+  View My Work
+</button>
+
           <button
   onClick={() => {
     const element = document.getElementById("contact"); // 👈 Contact section
