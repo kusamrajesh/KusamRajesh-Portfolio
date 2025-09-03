@@ -101,11 +101,6 @@ const Contact: React.FC = () => {
               </a>
             </div>
 
-            {/* Resume Download */}
-            <button className="bg-orange-600 hover:bg-orange-700 text-white px-6 py-3 rounded-full font-medium transition-all duration-200 transform hover:scale-105 flex items-center space-x-2">
-              <Download size={18} />
-              <span>Download Resume</span>
-            </button>
           </div>
 
           {/* Contact Form */}

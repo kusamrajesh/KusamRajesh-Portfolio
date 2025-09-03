@@ -70,8 +70,13 @@ const Header: React.FC<HeaderProps> = ({ activeSection }) => {
 
           {/* Resume Button */}
           <div className="hidden md:block">
-            <button className="bg-blue-700 hover:bg-blue-800 text-white px-6 py-2 rounded-full text-sm font-medium transition-colors duration-200">
+            <button className="bg-blue-700 hover:bg-blue-800 text-white px-6 py-2 rounded-full text-sm font-medium transition-all duration-200 transform hover:scale-105 flex items-center space-x-2">
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-4-4m4 4l4-4m6 5a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              <span>
               Download Resume
+              </span>
             </button>
           </div>
 
@@ -100,8 +105,13 @@ const Header: React.FC<HeaderProps> = ({ activeSection }) => {
                 </button>
               ))}
               <div className="px-4 pt-4">
-                <button className="w-full bg-blue-700 hover:bg-blue-800 text-white px-6 py-2 rounded-full text-sm font-medium transition-colors duration-200">
+                <button className="w-full bg-blue-700 hover:bg-blue-800 text-white px-6 py-2 rounded-full text-sm font-medium transition-all duration-200 flex items-center justify-center space-x-2">
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-4-4m4 4l4-4m6 5a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  <span>
                   Download Resume
+                  </span>
                 </button>
               </div>
             </nav>
