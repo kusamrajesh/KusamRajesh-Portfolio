@@ -41,7 +41,7 @@ const Footer: React.FC = () => {
           <div>
             <h4 className="text-lg font-semibold text-white mb-4">Quick Links</h4>
             <ul className="space-y-2">
-              {['About', 'Skills', 'Portfolio', 'Contact'].map((link) => (
+              {['About', 'Skills', 'Projects', 'Contact'].map((link) => (
                 <li key={link}>
                   <button 
                     onClick={() => {
