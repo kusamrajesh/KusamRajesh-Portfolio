@@ -27,27 +27,18 @@ const Portfolio: React.FC = () => {
     },
   ];
 
-  const educations = [
+  const education = [
     {
-      degree: "Bachelor of Technology (B.Tech) in Mechanical Engineering",
-      institution: "Balaji Institute of Technology & Science (BITS), Warangal",
+      degree: "Bachelor of Technology (B.Tech) - Mechanical Engineering",
+      college: "BITS Warangal",
       period: "2019 – 2022",
       description:
-        "Graduated in Mechanical Engineering with strong problem-solving and analytical skills. Transitioned into Software Testing with hands-on experience in Selenium, Java, and TestNG.",
-    },
-    {
-      degree: "Diploma in Mechanical Engineering",
-      institution: "Govt Polytechnic College, Warangal",
-      period: "2016 – 2019",
-      description:
-        "Completed diploma with distinction. Gained practical exposure to mechanical systems, which strengthened logical and structured thinking abilities.",
-    },
-    {
-      degree: "Secondary School Certificate (SSC)",
-      institution: "St. Gabriel’s High School, Warangal",
-      period: "2015 – 2016",
-      description:
-        "Completed schooling with strong academic performance and active participation in extracurricular activities.",
+        "Built a strong foundation in engineering concepts, problem-solving, and logical thinking. Transitioned into software testing by applying analytical skills and attention to detail in technology-driven environments.",
+      highlights: [
+        "Focused on core mechanical and analytical problem-solving",
+        "Learned structured project management and documentation",
+        "Developed passion for software quality and automation",
+      ],
     },
   ];
 
@@ -71,11 +62,11 @@ const Portfolio: React.FC = () => {
             {experiences.map((exp, index) => (
               <div
                 key={index}
-                className="bg-gray-50 border border-gray-200 rounded-xl shadow-sm hover:shadow-md transition duration-300 p-6"
+                className="bg-gradient-to-r from-blue-50 to-indigo-50 border border-gray-200 rounded-xl shadow-md hover:shadow-xl transition duration-300 p-6"
               >
                 <div className="flex items-center justify-between mb-4">
                   <h3 className="text-2xl font-semibold text-blue-700 flex items-center space-x-2">
-                    <Briefcase size={20} />
+                    <Briefcase size={22} />
                     <span>{exp.role}</span>
                   </h3>
                   <span className="text-sm text-gray-500">{exp.period}</span>
@@ -103,38 +94,41 @@ const Portfolio: React.FC = () => {
       </section>
 
       {/* Education Section */}
-      <section id="education" className="py-20 bg-gray-50">
+      <section id="education" className="py-20 bg-gradient-to-r from-orange-50 to-pink-50">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-800 mb-4">Education</h2>
-            <div className="w-20 h-1 bg-blue-600 mx-auto mb-6"></div>
+            <div className="w-20 h-1 bg-orange-500 mx-auto mb-6"></div>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Academic background that shaped my technical journey
+              Academic background and learning journey
             </p>
           </div>
 
-          <div className="space-y-8">
-            {educations.map((edu, index) => (
-              <div
-                key={index}
-                className="bg-white border border-gray-200 rounded-xl shadow-sm hover:shadow-md transition duration-300 p-6"
-              >
-                <div className="flex items-center justify-between mb-3">
-                  <h3 className="text-2xl font-semibold text-blue-700 flex items-center space-x-2">
-                    <GraduationCap size={20} />
-                    <span>{edu.degree}</span>
-                  </h3>
-                  <span className="text-sm text-gray-500">{edu.period}</span>
-                </div>
-                <h4 className="text-lg font-medium text-gray-800 mb-2">
-                  {edu.institution}
-                </h4>
-                <p className="text-gray-600 leading-relaxed">
-                  {edu.description}
-                </p>
+          {education.map((edu, index) => (
+            <div
+              key={index}
+              className="bg-white border-l-8 border-orange-500 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 p-8 max-w-3xl mx-auto"
+            >
+              <div className="flex items-center justify-between mb-4">
+                <h3 className="text-2xl font-semibold text-orange-600 flex items-center space-x-2">
+                  <GraduationCap size={26} />
+                  <span>{edu.degree}</span>
+                </h3>
+                <span className="text-sm text-gray-500">{edu.period}</span>
               </div>
-            ))}
-          </div>
+              <h4 className="text-lg font-medium text-gray-800 mb-3">
+                {edu.college}
+              </h4>
+              <p className="text-gray-600 mb-4 leading-relaxed">
+                {edu.description}
+              </p>
+              <ul className="list-disc list-inside text-gray-700 space-y-2">
+                {edu.highlights.map((point, i) => (
+                  <li key={i}>{point}</li>
+                ))}
+              </ul>
+            </div>
+          ))}
         </div>
       </section>
 
@@ -146,7 +140,7 @@ const Portfolio: React.FC = () => {
             <div className="w-20 h-1 bg-blue-600 mx-auto mb-6"></div>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
               A selection of projects that showcase my testing expertise and
-              automation skills
+              quality assurance skills
             </p>
           </div>
 
