@@ -76,16 +76,18 @@ const Hero: React.FC = () => {
             <button className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 rounded-full font-medium transition-all duration-200 transform hover:scale-105 shadow-lg hover:shadow-xl">
               View My Work
             </button>
-            <button className="border-2 border-white text-white hover:bg-white hover:text-blue-900 px-8 py-4 rounded-full font-medium transition-all duration-200 transform hover:scale-105">
-              <button
-  onClick={scrollToContact}
-  className="bg-blue-700 hover:bg-blue-800 text-white px-6 py-3 rounded-full shadow-lg transition-transform transform hover:scale-105"
+          <button
+  onClick={() => {
+    const element = document.getElementById("contact"); // 👈 Contact section
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  }}
+  className="border-2 border-white text-white hover:bg-white hover:text-blue-900 px-8 py-4 rounded-full font-medium transition-all duration-200 transform hover:scale-105"
 >
   Get In Touch
 </button>
 
-              Get In Touch
-            </button>
           </div>
 
           {/* Scroll Indicator */}
