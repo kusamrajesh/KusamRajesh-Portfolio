@@ -12,28 +12,8 @@ const Skills: React.FC = () => {
         { name: "HTML", color: "bg-teal-500" },
       ]
     },
-    {
-      title: "Backend Development",
-      skills: [
-        { name: "Node.js", color: "bg-green-600" },
-        { name: "Python", color: "bg-blue-500" },
-        { name: "PostgreSQL", color: "bg-blue-700" },
-        { name: "MongoDB", color: "bg-green-500" },
-        { name: "Express.js", color: "bg-gray-700" },
-        { name: "GraphQL", color: "bg-pink-500" }
-      ]
-    },
-    {
-      title: "Tools & Technologies",
-      skills: [
-        { name: "Git", color: "bg-orange-600" },
-        { name: "Docker", color: "bg-blue-600" },
-        { name: "AWS", color: "bg-orange-500" },
-        { name: "Figma", color: "bg-purple-500" },
-        { name: "Jest", color: "bg-red-600" },
-        { name: "Webpack", color: "bg-blue-400" }
-      ]
-    }
+   
+    
   ];
 
   return (
