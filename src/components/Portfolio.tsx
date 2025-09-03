@@ -25,14 +25,14 @@ const Portfolio: React.FC = () => {
         "Worked on manual and automated testing of web applications. Created test cases, executed regression suites, and automated workflows using Selenium, Java, and TestNG. Collaborated with developers to ensure bug-free releases.",
       technologies: ["Selenium", "Java", "TestNG"],
     },
-    {
-      role: "QA Intern",
-      company: "ABC Solutions",
-      period: "Jun 2021 – Dec 2021",
-      description:
-        "Assisted in testing multiple client projects, documenting defects, and preparing test reports. Learned agile testing practices and gained exposure to real-time project workflows.",
-      technologies: ["Manual Testing", "Agile", "Excel", "Bugzilla"],
-    },
+    // {
+    //   role: "QA Intern",
+    //   company: "ABC Solutions",
+    //   period: "Jun 2021 – Dec 2021",
+    //   description:
+    //     "Assisted in testing multiple client projects, documenting defects, and preparing test reports. Learned agile testing practices and gained exposure to real-time project workflows.",
+    //   technologies: ["Manual Testing", "Agile", "Excel", "Bugzilla"],
+    // },
   ];
 
   return (
