@@ -50,13 +50,13 @@ const About: React.FC = () => {
 
             <div className="flex flex-wrap gap-4">
               <div className="bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-medium">
-                3+ Years Experience
+                Manual & Automation Testing
               </div>
               <div className="bg-teal-100 text-teal-800 px-4 py-2 rounded-full text-sm font-medium">
-                15+ Projects Completed
+                Real-Time Project Experience
               </div>
               <div className="bg-orange-100 text-orange-800 px-4 py-2 rounded-full text-sm font-medium">
-                Full Stack Developer
+                Software Tester
               </div>
             </div>
           </div>
