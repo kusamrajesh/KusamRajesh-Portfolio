@@ -23,9 +23,9 @@ My expertise lies in manual testing, automation frameworks, and defect tracking.
 
 🛠️ My Testing Toolkit
 
-Automation Tools: Selenium WebDriver, TestNG, JUnit
+Automation Tools: Selenium 
 
-Programming Languages: Java, SQL, JavaScript (Basics)
+Programming Languages: Core Java 
 
 Testing Types: Manual, Functional, Regression, Smoke, End-to-End
 
