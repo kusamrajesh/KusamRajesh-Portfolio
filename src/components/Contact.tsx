@@ -88,7 +88,7 @@ const Contact: React.FC = () => {
             {/* Social Links */}
             <div className="flex space-x-6 mb-8">
               <a 
-                href="https://linkedin.com" 
+                href="https://www.linkedin.com/in/kusam-rajesh-094379191/" 
                 className="bg-blue-600 hover:bg-blue-700 p-3 rounded-full transition-colors duration-200 transform hover:scale-110"
               >
                 <Linkedin size={20} />
