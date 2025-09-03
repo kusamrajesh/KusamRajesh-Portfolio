@@ -3,14 +3,13 @@ import React from 'react';
 const Skills: React.FC = () => {
   const skillCategories = [
     {
-      title: "Frontend Development",
+      title: "Software Tester",
       skills: [
-        { name: "React", color: "bg-blue-500" },
-        { name: "TypeScript", color: "bg-blue-600" },
-        { name: "JavaScript", color: "bg-yellow-500" },
-        { name: "HTML/CSS", color: "bg-orange-500" },
-        { name: "Tailwind CSS", color: "bg-teal-500" },
-        { name: "Next.js", color: "bg-gray-800" }
+        { name: "Manual", color: "bg-blue-500" },
+        { name: "Automation", color: "bg-blue-600" },
+        { name: "Selenium", color: "bg-yellow-500" },
+        { name: "Core Java", color: "bg-orange-500" },
+        { name: "HTML", color: "bg-teal-500" },
       ]
     },
     {
