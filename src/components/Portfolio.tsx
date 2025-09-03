@@ -93,44 +93,43 @@ const Portfolio: React.FC = () => {
         </div>
       </section>
 
-      {/* Education Section */}
-      <section id="education" className="py-20 bg-gradient-to-r from-orange-50 to-pink-50">
+           {/* Education Section */}
+      <section id="education" className="py-20 bg-white">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-800 mb-4">Education</h2>
-            <div className="w-20 h-1 bg-orange-500 mx-auto mb-6"></div>
+            <div className="w-20 h-1 bg-blue-600 mx-auto mb-6"></div>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Academic background and learning journey
+              Academic qualifications and learning journey
             </p>
           </div>
 
-          {education.map((edu, index) => (
-            <div
-              key={index}
-              className="bg-white border-l-8 border-orange-500 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 p-8 max-w-3xl mx-auto"
-            >
-              <div className="flex items-center justify-between mb-4">
-                <h3 className="text-2xl font-semibold text-orange-600 flex items-center space-x-2">
-                  <GraduationCap size={26} />
-                  <span>{edu.degree}</span>
-                </h3>
-                <span className="text-sm text-gray-500">{edu.period}</span>
-              </div>
-              <h4 className="text-lg font-medium text-gray-800 mb-3">
-                {edu.college}
-              </h4>
-              <p className="text-gray-600 mb-4 leading-relaxed">
-                {edu.description}
-              </p>
-              <ul className="list-disc list-inside text-gray-700 space-y-2">
-                {edu.highlights.map((point, i) => (
-                  <li key={i}>{point}</li>
-                ))}
-              </ul>
+          <div className="bg-gradient-to-r from-blue-50 to-indigo-50 border border-gray-200 rounded-xl shadow-md hover:shadow-xl transition duration-300 p-8 max-w-3xl mx-auto">
+            <div className="flex items-center justify-between mb-4">
+              <h3 className="text-2xl font-semibold text-blue-700 flex items-center space-x-2">
+                <GraduationCap size={26} />
+                <span>Bachelor of Technology</span>
+              </h3>
+              <span className="text-sm text-gray-500">2019 – 2022</span>
             </div>
-          ))}
+            <h4 className="text-lg font-medium text-gray-800 mb-3">
+              Birla Institute of Technology & Science (BITS), Warangal
+            </h4>
+            <p className="text-gray-600 mb-4 leading-relaxed">
+              Gained strong academic foundations in engineering concepts,
+              analytical thinking, and structured project work. Built
+              problem-solving skills that support my career in software testing
+              and quality assurance.
+            </p>
+            <ul className="list-disc list-inside text-gray-700 space-y-2">
+              <li>Developed logical and analytical reasoning skills</li>
+              <li>Gained exposure to structured projects and documentation</li>
+              <li>Transitioned into IT with a focus on software testing</li>
+            </ul>
+          </div>
         </div>
       </section>
+
 
       {/* Portfolio Section */}
       <section id="portfolio" className="py-20 bg-gray-50">
