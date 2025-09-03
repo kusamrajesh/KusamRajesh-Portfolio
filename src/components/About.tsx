@@ -20,8 +20,8 @@ const About: React.FC = () => {
     },
     {
       icon: <Coffee className="w-8 h-8 text-amber-600" />,
-      title: "Passion Driven",
-      description: "Continuous learning and staying updated with latest technologies"
+      title: "Test Planning",
+      description: "Designing and executing test cases with clear documentation"
     }
   ];
 
