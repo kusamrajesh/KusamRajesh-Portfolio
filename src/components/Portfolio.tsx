@@ -25,7 +25,14 @@ const Portfolio: React.FC = () => {
         "Worked on manual and automated testing of web applications. Created test cases, executed regression suites, and automated workflows using Selenium, Java, and TestNG. Collaborated with developers to ensure bug-free releases.",
       technologies: ["Selenium", "Java", "TestNG"],
     },
-    
+    const educations = [
+  {
+    degree: "Bachelor of Technology (B.Tech) in Mechanical Engineering",
+    institution: "Balaji Institute of Technology & Science (BITS), Warangal",
+    period: "2019 – 2022",
+    description:
+      "Graduated in Mechanical Engineering with strong problem-solving and analytical skills. Transitioned into Software Testing with hands-on experience in Selenium, Java, and TestNG.",
+  },
     // {
     //   role: "QA Intern",
     //   company: "ABC Solutions",
