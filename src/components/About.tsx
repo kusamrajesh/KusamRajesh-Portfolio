@@ -15,8 +15,8 @@ const About: React.FC = () => {
     },
     {
       icon: <Users className="w-8 h-8 text-teal-600" />,
-      title: "Team Player",
-      description: "Collaborative approach with excellent communication skills"
+      title: "Analytical Thinking",
+      description: "Strong problem-solving skills to investigate defects and validate fixes"
     },
     {
       icon: <Coffee className="w-8 h-8 text-amber-600" />,
