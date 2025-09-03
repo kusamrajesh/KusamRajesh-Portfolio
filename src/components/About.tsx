@@ -5,8 +5,8 @@ const About: React.FC = () => {
   const highlights = [
     {
       icon: <Code className="w-8 h-8 text-blue-600" />,
-      title: "Clean Code",
-      description: "Writing maintainable, scalable code that follows best practices"
+      title: "Attention to Detail",
+      description: "Thoroughly identifying bugs and edge cases to ensure flawless user experiences"
     },
     {
       icon: <Lightbulb className="w-8 h-8 text-orange-500" />,
