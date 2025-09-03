@@ -71,7 +71,7 @@ const Header: React.FC<HeaderProps> = ({ activeSection }) => {
           {/* Resume Download Button */}
           <div className="hidden md:block">
            <a
-  href="https://github.com/kusamrajesh/Rajesh-Resume/blob/8956bd9c89bf623d6bc7bef191921b1ae0555d27/KusamRajesh_Testing_2022.pdf" // replace with your LinkedIn resume URL
+  href="file:///C:/Users/Admin/Downloads/KusamRajesh_Testing_2022%20(1).pdf" // replace with your LinkedIn resume URL
   target="_blank"
   rel="noopener noreferrer"
   className="bg-blue-700 hover:bg-blue-800 text-white px-6 py-2 rounded-full text-sm font-medium transition-all duration-200 transform hover:scale-105 flex items-center space-x-2"
