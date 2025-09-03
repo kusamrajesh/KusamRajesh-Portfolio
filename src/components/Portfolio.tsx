@@ -19,11 +19,11 @@ const Portfolio: React.FC = () => {
   const experiences = [
     {
       role: "Software Test Engineer",
-      company: "XYZ Technologies",
-      period: "Jan 2022 – Present",
+      company: "Attivo Technology Solutions",
+      period: "June 2025 – Present",
       description:
         "Worked on manual and automated testing of web applications. Created test cases, executed regression suites, and automated workflows using Selenium, Java, and TestNG. Collaborated with developers to ensure bug-free releases.",
-      technologies: ["Selenium", "Java", "TestNG", "Postman", "Jira"],
+      technologies: ["Selenium", "Java", "TestNG"],
     },
     {
       role: "QA Intern",
