@@ -22,7 +22,7 @@ const Footer: React.FC = () => {
                 <Github size={20} />
               </a>
               <a 
-                href="www.linkedin.com/in/kusam-rajesh-094379191" 
+                href="https://www.linkedin.com/in/kusam-rajesh-094379191/" 
                 className="text-gray-400 hover:text-white transition-colors duration-200 transform hover:scale-110"
               >
                 <Linkedin size={20} />
