@@ -59,7 +59,7 @@ Automated workflows with Selenium, Java.
 
 📬 Contact Me
 
-📧 Email: your-email@example.com
+📧 Email: kusamrajesh184@gmail.com
 
 🔗 LinkedIn: https://www.linkedin.com/in/kusam-rajesh-094379191/
 
