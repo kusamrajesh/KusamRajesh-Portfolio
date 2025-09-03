@@ -113,7 +113,7 @@ const Portfolio: React.FC = () => {
               <span className="text-sm text-gray-500">2019 – 2022</span>
             </div>
             <h4 className="text-lg font-medium text-gray-800 mb-3">
-              Birla Institute of Technology & Science (BITS), Warangal
+              Balaji Institute of Technology & Science (BITS), Warangal
             </h4>
             <p className="text-gray-600 mb-4 leading-relaxed">
               Gained strong academic foundations in engineering concepts,
