@@ -33,16 +33,15 @@ const Hero: React.FC = () => {
 
           {/* Main Content */}
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight">
-            John <span className="text-orange-400">Smith</span>
+            Kusam <span className="text-orange-400">Rajesh</span>
           </h1>
           
           <p className="text-xl md:text-2xl text-blue-100 mb-4 font-light">
-            Full Stack Developer
+            Software Tester
           </p>
           
           <p className="text-lg text-blue-200 mb-8 max-w-2xl mx-auto leading-relaxed">
-            Passionate about creating innovative digital solutions that make a difference. 
-            I bring ideas to life through clean code and exceptional user experiences.
+           Passionate about ensuring software quality that makes a difference. I bring ideas to life by delivering reliable, bug-free, and seamless user experiences.
           </p>
 
           {/* Social Links */}
@@ -60,7 +59,7 @@ const Hero: React.FC = () => {
               <Linkedin size={24} />
             </a>
             <a 
-              href="mailto:john@example.com" 
+              href="mailto:kusamrajesh184@gmail.com" 
               className="text-white hover:text-orange-400 transition-colors duration-200 transform hover:scale-110"
             >
               <Mail size={24} />
