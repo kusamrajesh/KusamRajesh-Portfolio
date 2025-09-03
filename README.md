@@ -1,18 +1,17 @@
-🧪 Kusam Rajesh – Software Tester Portfolio
+🧪 Kusam Rajesh – Software Tester
 
 Welcome to my Portfolio Website, built to showcase my skills, projects, education, and professional journey as a Software Test Engineer.
 
 🌐 Live Portfolio: https://professional-portfol-hhwf.bolt.host/
+
 💻 GitHub Repo: KusamRajesh-Portfolio
 
 📖 About Me
 
 I am a Software Test Engineer passionate about ensuring quality, reliability, and flawless user experiences in web applications.
-My expertise lies in manual testing, automation frameworks, API testing, and defect tracking. I bring strong problem-solving, analytical thinking, and attention to detail to every project.
+My expertise lies in manual testing, automation frameworks, and defect tracking. I bring strong problem-solving, analytical thinking, and attention to detail to every project.
 
-✨ Features of My Portfolio
 
-⚡ Modern, responsive UI (React + Tailwind CSS)
 
 📄 Resume Download Button
 
@@ -30,11 +29,7 @@ Programming Languages: Java, SQL, JavaScript (Basics)
 
 Testing Types: Manual, Functional, Regression, Smoke, End-to-End
 
-API Testing: Postman
-
-Defect Tracking: Jira, Bugzilla
-
-Collaboration & Methodologies: Agile, Scrum
+Collaboration & Methodologies: Agile
 
 Others: Test Case Design, Bug Reporting, Test Execution
 
@@ -50,7 +45,7 @@ Associate Software Engineer – Attivo Technology Solutions
 
 🎓 Education
 
-Bachelor of Technology (B.Tech) – Birla Institute of Technology & Science (BITS), Warangal
+Bachelor of Technology (B.Tech) – Balaji Institute of Technology & Science (BITS), Warangal
 📅 2019 – 2022
 
 📌 Featured Project
@@ -60,27 +55,11 @@ Comprehensive manual & automation testing project for the Adactin Hotel web app.
 
 Covered functional testing, regression testing, and end-to-end booking scenarios.
 
-Automated workflows with Selenium, Java, TestNG.
-
-Links: GitHub Repo
- | Live App
-
-🚀 Installation & Setup
-
-To run this project locally:
-
-git clone https://github.com/kusamrajesh/KusamRajesh-Portfolio.git
-cd KusamRajesh-Portfolio
-npm install
-npm run dev
-
-📸 Portfolio Preview
-
-(Add screenshot or GIF of your portfolio website here)
+Automated workflows with Selenium, Java.
 
 📬 Contact Me
 
 📧 Email: your-email@example.com
 
-🔗 LinkedIn: [Your LinkedIn Profile]
-🐙 GitHub: https://github.com/kusamrajesh
+🔗 LinkedIn: https://www.linkedin.com/in/kusam-rajesh-094379191/
+🐙 GitHub: https://github.com/kusamrajesh/KusamRajesh-Portfolio
