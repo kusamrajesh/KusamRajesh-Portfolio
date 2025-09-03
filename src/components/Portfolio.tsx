@@ -10,7 +10,7 @@ const Portfolio: React.FC = () => {
       image:
         "https://images.pexels.com/photos/271639/pexels-photo-271639.jpeg?auto=compress&cs=tinysrgb&w=800",
       technologies: ["Selenium", "Java", "TestNG"],
-      githubUrl: "https://github.com/your-username/adactin-hotel-testing",
+      githubUrl: "https://github.com/kusamrajesh/KusamRajesh-Portfolio",
       liveUrl: "https://adactinhotelapp.com",
       featured: true,
     },
