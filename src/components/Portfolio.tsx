@@ -25,6 +25,34 @@ const Portfolio: React.FC = () => {
         "Worked on manual and automated testing of web applications. Created test cases, executed regression suites, and automated workflows using Selenium, Java, and TestNG. Collaborated with developers to ensure bug-free releases.",
       technologies: ["Selenium", "Java", "TestNG"],
     },
+    {/* Education Section */}
+<section id="education" className="py-20 bg-gray-50">
+  <div className="container mx-auto px-6">
+    <div className="text-center mb-16">
+      <h2 className="text-4xl font-bold text-gray-800 mb-4">Education</h2>
+      <div className="w-20 h-1 bg-blue-600 mx-auto mb-6"></div>
+      <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+        Academic background that built the foundation for my professional career
+      </p>
+    </div>
+
+    <div className="space-y-8">
+      {/* B.Tech */}
+      <div className="bg-white border border-gray-200 rounded-xl shadow-sm hover:shadow-md transition duration-300 p-6">
+        <div className="flex items-center justify-between mb-3">
+          <h3 className="text-2xl font-semibold text-blue-700">
+            Bachelor of Technology (B.Tech) in Mechanical Engineering
+          </h3>
+          <span className="text-sm text-gray-500">2019 – 2022</span>
+        </div>
+        <h4 className="text-lg font-medium text-gray-800 mb-2">
+          Balaji Institute of Technology & Science (BITS), Warangal
+        </h4>
+        <p className="text-gray-600 leading-relaxed">
+          Graduated in Mechanical Engineering with strong problem-solving and analytical skills. 
+          Transitioned into Software Testing with hands-on experience in Selenium, Java, and TestNG.
+        </p>
+      </div>
     // {
     //   role: "QA Intern",
     //   company: "ABC Solutions",
