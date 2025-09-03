@@ -25,6 +25,11 @@ const Hero: React.FC = () => {
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center">
           {/* Profile Image */}
+           <img
+    src="/profile.jpg"   // <-- put your photo inside public folder, rename to profile.jpg
+    alt="Kusam Rajesh"
+    className="w-32 h-32 mx-auto rounded-full shadow-2xl object-cover border-4 border-white"
+  />
           <div className="mb-8">
             <div className="w-32 h-32 mx-auto rounded-full bg-gradient-to-br from-blue-400 to-blue-600 flex items-center justify-center text-white text-4xl font-bold shadow-2xl">
               
