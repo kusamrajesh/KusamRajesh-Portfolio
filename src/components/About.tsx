@@ -41,10 +41,7 @@ const About: React.FC = () => {
             </h3>
             
             <p className="text-gray-600 mb-6 leading-relaxed">
-              I'm a passionate full stack developer with over 3 years of experience building 
-              web applications that solve real-world problems. My journey started with curiosity 
-              about how websites work, and has evolved into a deep love for creating seamless 
-              digital experiences.
+             I'm a passionate Software Tester focused on ensuring quality, reliability, and seamless user experiences. My journey started with curiosity about how applications work, and has grown into a strong commitment to delivering bug-free, high-performing digital solutions.
             </p>
             
             <p className="text-gray-600 mb-8 leading-relaxed">
