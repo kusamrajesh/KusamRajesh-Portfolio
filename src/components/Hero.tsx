@@ -58,7 +58,7 @@ const Hero: React.FC = () => {
               <Github size={24} />
             </a>
             <a 
-              href="https://linkedin.com" 
+              href="https://www.linkedin.com/in/kusam-rajesh-094379191/" 
               className="text-white hover:text-orange-400 transition-colors duration-200 transform hover:scale-110"
             >
               <Linkedin size={24} />
