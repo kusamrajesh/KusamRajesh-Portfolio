@@ -77,20 +77,19 @@ const Hero: React.FC = () => {
               View My Work
             </button>
             <button className="border-2 border-white text-white hover:bg-white hover:text-blue-900 px-8 py-4 rounded-full font-medium transition-all duration-200 transform hover:scale-105">
+              <button
+  onClick={scrollToContact}
+  className="bg-blue-700 hover:bg-blue-800 text-white px-6 py-3 rounded-full shadow-lg transition-transform transform hover:scale-105"
+>
+  Get In Touch
+</button>
+
               Get In Touch
             </button>
           </div>
 
           {/* Scroll Indicator */}
-          <div className="mt-10 flex justify-center">
-  <button
-    onClick={scrollToAbout}
-    className="animate-bounce text-white hover:text-blue-400 transition-colors duration-200 flex flex-col items-center"
-  >
-    <ArrowDown size={28} className="mb-2" />
-    <span className="text-sm font-medium">Scroll Down</span>
-  </button>
-</div>
+          
           <button 
             onClick={scrollToAbout}
             className="animate-bounce text-white hover:text-orange-400 transition-colors duration-200"
