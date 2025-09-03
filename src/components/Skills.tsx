@@ -23,7 +23,7 @@ const Skills: React.FC = () => {
           <h2 className="text-4xl font-bold text-gray-800 mb-4">Skills & Expertise</h2>
           <div className="w-20 h-1 bg-blue-600 mx-auto mb-6"></div>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            A comprehensive toolkit of modern technologies and frameworks
+           A comprehensive toolkit of modern software testing tools, frameworks, and methodologies.”
           </p>
         </div>
 
