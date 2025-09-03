@@ -45,9 +45,7 @@ const About: React.FC = () => {
             </p>
             
             <p className="text-gray-600 mb-8 leading-relaxed">
-              When I'm not coding, you'll find me exploring new technologies, contributing to 
-              open source projects, or mentoring aspiring developers. I believe in writing 
-              code that not only works but is also clean, maintainable, and scalable.
+             When I'm not testing applications, you'll find me exploring new QA tools, practicing automation frameworks, or enhancing my knowledge of software quality processes. I believe in delivering software that is not only functional but also reliable, user-friendly, and free of defects.
             </p>
 
             <div className="flex flex-wrap gap-4">
