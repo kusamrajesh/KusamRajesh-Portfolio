@@ -94,7 +94,7 @@ const Contact: React.FC = () => {
                 <Linkedin size={20} />
               </a>
               <a 
-                href="https://github.com" 
+                href="https://github.com/kusamrajesh/KusamRajesh-Portfolio" 
                 className="bg-gray-700 hover:bg-gray-600 p-3 rounded-full transition-colors duration-200 transform hover:scale-110"
               >
                 <Github size={20} />
