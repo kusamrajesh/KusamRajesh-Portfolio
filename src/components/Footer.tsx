@@ -26,6 +26,7 @@ const Footer: React.FC = () => {
                 className="text-gray-400 hover:text-white transition-colors duration-200 transform hover:scale-110"
               >
                 <Linkedin size={20} />
+                
               </a>
               <a 
                 href="mailto:kusamrajesh184@gmail.com" 
