@@ -10,7 +10,7 @@ const Footer: React.FC = () => {
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           {/* Brand Section */}
           <div>
-            <h3 className="text-2xl font-bold text-white mb-4">John Smith</h3>
+            <h3 className="text-2xl font-bold text-white mb-4">Kusam Rajesh</h3>
             <p className="text-gray-400 mb-4">
              Software Tester passionate about ensuring quality, reliability, and seamless user experiences.
             </p>
@@ -62,9 +62,9 @@ const Footer: React.FC = () => {
           <div>
             <h4 className="text-lg font-semibold text-white mb-4">Contact Info</h4>
             <div className="space-y-2 text-gray-400">
-              <p>john.smith@example.com</p>
-              <p>+1 (555) 123-4567</p>
-              <p>San Francisco, CA</p>
+              <p>kusamrajesh184@gmail.com</p>
+              <p>+918499805644</p>
+              <p>Hyderabad</p>
             </div>
           </div>
         </div>
