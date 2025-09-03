@@ -10,8 +10,8 @@ const About: React.FC = () => {
     },
     {
       icon: <Lightbulb className="w-8 h-8 text-orange-500" />,
-      title: "Problem Solving",
-      description: "Creative solutions to complex technical challenges"
+      title: "Quality Assurance",
+      description: "Ensuring software meets functional, UI, and performance standards"
     },
     {
       icon: <Users className="w-8 h-8 text-teal-600" />,
