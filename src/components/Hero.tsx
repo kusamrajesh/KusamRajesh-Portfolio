@@ -26,15 +26,15 @@ const Hero: React.FC = () => {
         <div className="text-center">
           {/* Profile Image */}
           
-          <div className="mb-8">
-           
-               <img
-    src="https://avatars.githubusercontent.com/u/141245986?v=4"   // 👉 place your image in the public folder and rename it to profile.jpg
+         {/* Profile Image */}
+<div className="mb-8">
+  <img
+    src="https://avatars.githubusercontent.com/u/141245986?v=4"
     alt="Kusam Rajesh"
     className="w-32 h-32 mx-auto rounded-full shadow-2xl object-cover border-4 border-white"
   />
-           
-          </div>
+</div>
+
 
           {/* Main Content */}
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight">
