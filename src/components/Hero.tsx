@@ -82,6 +82,15 @@ const Hero: React.FC = () => {
           </div>
 
           {/* Scroll Indicator */}
+          <div className="mt-10 flex justify-center">
+  <button
+    onClick={scrollToAbout}
+    className="animate-bounce text-white hover:text-blue-400 transition-colors duration-200 flex flex-col items-center"
+  >
+    <ArrowDown size={28} className="mb-2" />
+    <span className="text-sm font-medium">Scroll Down</span>
+  </button>
+</div>
           <button 
             onClick={scrollToAbout}
             className="animate-bounce text-white hover:text-orange-400 transition-colors duration-200"
