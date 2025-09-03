@@ -52,7 +52,7 @@ const Hero: React.FC = () => {
           {/* Social Links */}
           <div className="flex justify-center space-x-6 mb-12">
             <a 
-              href="https://github.com" 
+              href="https://github.com/kusamrajesh/KusamRajesh-Portfolio" 
               className="text-white hover:text-orange-400 transition-colors duration-200 transform hover:scale-110"
             >
               <Github size={24} />
