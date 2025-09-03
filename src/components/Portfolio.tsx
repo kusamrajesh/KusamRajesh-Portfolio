@@ -9,7 +9,7 @@ const Portfolio: React.FC = () => {
         "Manual and automated testing project for the Adactin Hotel Application. Includes test case design, execution, defect reporting, and automation using Selenium with Java and TestNG. Covered functional, regression, and end-to-end booking scenarios.",
       image:
         "https://images.pexels.com/photos/271639/pexels-photo-271639.jpeg?auto=compress&cs=tinysrgb&w=800",
-      technologies: ["Selenium", "Java", "TestNG""],
+      technologies: ["Selenium", "Java", "TestNG"],
       githubUrl: "https://github.com/your-username/adactin-hotel-testing",
       liveUrl: "https://adactinhotelapp.com",
       featured: true,
