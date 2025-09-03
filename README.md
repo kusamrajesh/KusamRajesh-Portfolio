@@ -2,7 +2,7 @@
 
 Welcome to my Portfolio Website, built to showcase my skills, projects, education, and professional journey as a Software Test Engineer.
 
-🌐 Live Portfolio: [Your Live Link Here]
+🌐 Live Portfolio: https://professional-portfol-hhwf.bolt.host/
 💻 GitHub Repo: KusamRajesh-Portfolio
 
 📖 About Me
