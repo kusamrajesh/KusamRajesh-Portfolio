@@ -29,14 +29,14 @@ const Contact: React.FC = () => {
     {
       icon: <Mail className="w-6 h-6 text-blue-600" />,
       title: "Email",
-      details: "john.smith@example.com",
-      link: "mailto:john.smith@example.com"
+      details: "kusamrajesh184@example.com",
+      link: "mailto:kusamrajesh184@example.com"
     },
     {
       icon: <Phone className="w-6 h-6 text-teal-600" />,
       title: "Phone",
-      details: "+1 (555) 123-4567",
-      link: "tel:+15551234567"
+      details: "+918499805644",
+      link: "Mob : 8499805644"
     },
     {
       icon: <MapPin className="w-6 h-6 text-orange-600" />,
