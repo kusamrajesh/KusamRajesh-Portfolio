@@ -1,5 +1,5 @@
 import React from "react";
-import { ExternalLink, Github, Briefcase } from "lucide-react";
+import { ExternalLink, Github, Briefcase, GraduationCap } from "lucide-react";
 
 const Portfolio: React.FC = () => {
   const projects = [
@@ -25,21 +25,30 @@ const Portfolio: React.FC = () => {
         "Worked on manual and automated testing of web applications. Created test cases, executed regression suites, and automated workflows using Selenium, Java, and TestNG. Collaborated with developers to ensure bug-free releases.",
       technologies: ["Selenium", "Java", "TestNG"],
     },
+  ];
+
+  const educations = [
     {
-    degree: "Bachelor of Technology (B.Tech) in Mechanical Engineering",
-    institution: "Balaji Institute of Technology & Science (BITS), Warangal",
-    period: "2019 – 2022",
-    description:
-      "Graduated in Mechanical Engineering with strong problem-solving and analytical skills. Transitioned into Software Testing with hands-on experience in Selenium, Java, and TestNG.",
-  },
-    // {
-    //   role: "QA Intern",
-    //   company: "ABC Solutions",
-    //   period: "Jun 2021 – Dec 2021",
-    //   description:
-    //     "Assisted in testing multiple client projects, documenting defects, and preparing test reports. Learned agile testing practices and gained exposure to real-time project workflows.",
-    //   technologies: ["Manual Testing", "Agile", "Excel", "Bugzilla"],
-    // },
+      degree: "Bachelor of Technology (B.Tech) in Mechanical Engineering",
+      institution: "Balaji Institute of Technology & Science (BITS), Warangal",
+      period: "2019 – 2022",
+      description:
+        "Graduated in Mechanical Engineering with strong problem-solving and analytical skills. Transitioned into Software Testing with hands-on experience in Selenium, Java, and TestNG.",
+    },
+    {
+      degree: "Diploma in Mechanical Engineering",
+      institution: "Govt Polytechnic College, Warangal",
+      period: "2016 – 2019",
+      description:
+        "Completed diploma with distinction. Gained practical exposure to mechanical systems, which strengthened logical and structured thinking abilities.",
+    },
+    {
+      degree: "Secondary School Certificate (SSC)",
+      institution: "St. Gabriel’s High School, Warangal",
+      period: "2015 – 2016",
+      description:
+        "Completed schooling with strong academic performance and active participation in extracurricular activities.",
+    },
   ];
 
   return (
@@ -93,6 +102,42 @@ const Portfolio: React.FC = () => {
         </div>
       </section>
 
+      {/* Education Section */}
+      <section id="education" className="py-20 bg-gray-50">
+        <div className="container mx-auto px-6">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-gray-800 mb-4">Education</h2>
+            <div className="w-20 h-1 bg-blue-600 mx-auto mb-6"></div>
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+              Academic background that shaped my technical journey
+            </p>
+          </div>
+
+          <div className="space-y-8">
+            {educations.map((edu, index) => (
+              <div
+                key={index}
+                className="bg-white border border-gray-200 rounded-xl shadow-sm hover:shadow-md transition duration-300 p-6"
+              >
+                <div className="flex items-center justify-between mb-3">
+                  <h3 className="text-2xl font-semibold text-blue-700 flex items-center space-x-2">
+                    <GraduationCap size={20} />
+                    <span>{edu.degree}</span>
+                  </h3>
+                  <span className="text-sm text-gray-500">{edu.period}</span>
+                </div>
+                <h4 className="text-lg font-medium text-gray-800 mb-2">
+                  {edu.institution}
+                </h4>
+                <p className="text-gray-600 leading-relaxed">
+                  {edu.description}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Portfolio Section */}
       <section id="portfolio" className="py-20 bg-gray-50">
         <div className="container mx-auto px-6">
@@ -100,8 +145,8 @@ const Portfolio: React.FC = () => {
             <h2 className="text-4xl font-bold text-gray-800 mb-4">Projects</h2>
             <div className="w-20 h-1 bg-blue-600 mx-auto mb-6"></div>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              A selection of projects that showcase my development skills and
-              creativity
+              A selection of projects that showcase my testing expertise and
+              automation skills
             </p>
           </div>
 
