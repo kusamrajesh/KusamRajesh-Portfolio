@@ -71,9 +71,7 @@ const Header: React.FC<HeaderProps> = ({ activeSection }) => {
           {/* Resume Download Button */} 
           <div className="hidden md:block">
           <a
-  {/* href="https://github.com/kusamrajesh/Rajesh-Resume/raw/main/KusamRajesh_Testing_2022.pdf" */}
-            // raw link for direct download
-    href="https://github.com/kusamrajesh/KusamRajesh-Portfolio/blob/8b3d51266119ecbc0cdc45dc4299aec66a509e13/Rajesh_Testing_2025.docx"
+  href="https://github.com/kusamrajesh/Rajesh-Resume/raw/main/KusamRajesh_Testing_2022.pdf" // raw link for direct download 
   download="Rajesh_Testing_2025.docx" 
   target="_blank"
   rel="noopener noreferrer"
