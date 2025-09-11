@@ -4,9 +4,9 @@ import { ExternalLink, Github, Briefcase, GraduationCap } from "lucide-react";
 const Portfolio: React.FC = () => {
   const projects = [
     {
-      title: "Adactin Hotel Testing",
+      title: "Adactin Hotel Management Application",
       description:
-        "Manual and automated testing project for the Adactin Hotel Application. Includes test case design, execution, defect reporting, and automation using Selenium with Java and TestNG. Covered functional, regression, and end-to-end booking scenarios.",
+        "Hotel booking platform enabling users to register, login, search, book, and cancel hotels online. QA scope included functional and regression testing manually and automating key flows using Selenium WebDriver + Java.",
       image:
         "https://images.pexels.com/photos/271639/pexels-photo-271639.jpeg?auto=compress&cs=tinysrgb&w=800",
       technologies: ["Selenium", "Java", "TestNG"],
@@ -14,16 +14,71 @@ const Portfolio: React.FC = () => {
       liveUrl: "https://adactinhotelapp.com",
       featured: true,
     },
+    {
+      title: "HR Management System (HRMS)",
+      description:
+        "Web-based HR application for managing Employee Information, Leave Requests, Payroll, and Recruitment. Included manual and automated testing of end-to-end workflows using Selenium + Java.",
+      image:
+        "https://images.pexels.com/photos/3184303/pexels-photo-3184303.jpeg?auto=compress&cs=tinysrgb&w=800",
+      technologies: ["Selenium", "Java"],
+      githubUrl: "https://github.com/kusamrajesh/KusamRajesh-Portfolio",
+      liveUrl: "#",
+    },
   ];
 
   const experiences = [
     {
       role: "Associate Software Engineer",
-      company: "Attivo Technology Solutions",
-      period: "June 2025 – Present",
+      company: "ATTIVO TECHNOLOGY SOLUTIONS Pvt. Ltd.",
+      location: "Hyderabad",
+      period: "Nov 2022 – Present (2.8 Years)",
+      project: "Adactin Hotel Management Application",
+      domain: "Travel & Hospitality",
       description:
-        "Worked on manual and automated testing of web applications. Created test cases, executed regression suites, and automated workflows using Selenium, Java, and TestNG. Collaborated with developers to ensure bug-free releases.",
-      technologies: ["Selenium", "Java", "TestNG"],
+        "Adactin Hotel App is a hotel booking platform. QA scope included functional and regression testing manually and automating key flows using Selenium WebDriver + Java.",
+      responsibilities: [
+        "Reviewed requirements and prepared test scenarios, test cases, and test data.",
+        "Performed Functional, Integration, Regression, Smoke, and Sanity testing.",
+        "Validated complete booking workflow: Login → Search → Select → Book → Confirm → Cancel.",
+        "Conducted cross-browser and UI testing on Chrome, Firefox, and Edge.",
+        "Logged and tracked defects using JIRA and worked closely with developers.",
+        "Prepared RTM (Requirement Traceability Matrix) and test execution reports.",
+        "Participated in Agile ceremonies (daily stand-ups, sprint planning, retrospectives).",
+      ],
+      automationContribution: [
+        "Automated Login, Search Hotel, and Booking Confirmation modules using Selenium WebDriver + Java.",
+        "Applied XPath, CSS Selectors, ID, and Name locators for element identification.",
+        "Used TestNG for regression suite execution and reporting.",
+        "Created data-driven tests for hotel search with multiple input values.",
+        "Automated repetitive regression cases, reducing manual effort by ~20%.",
+      ],
+      achievements: [
+        "Improved test coverage by documenting detailed test cases.",
+        "Reduced defect leakage into UAT by enhancing regression coverage.",
+        "Contributed automation scripts for critical flows, saving ~15–20% manual testing time.",
+      ],
+    },
+    {
+      role: "QA Engineer – HR Management System (HRMS)",
+      company: "ATTIVO TECHNOLOGY SOLUTIONS Pvt. Ltd.",
+      period: "Nov 2022 – Present",
+      domain: "HR / Enterprise Solutions",
+      description:
+        "HRMS is a web-based application to manage Employee Information, Leave Requests, Payroll, and Recruitment. Included manual and automated testing of workflows.",
+      responsibilities: [
+        "Tested end-to-end workflows: Employee Onboarding → Leave Requests → Payroll.",
+        "Designed and executed test scenarios, test cases, and prepared RTM to ensure requirement coverage.",
+        "Performed Functional, Regression, and Integration testing across modules.",
+        "Logged and tracked defects in JIRA, collaborated with developers, and retested after fixes.",
+        "Conducted cross-browser testing (Chrome, Firefox, Edge) to ensure compatibility.",
+      ],
+      automationContribution: [
+        "Automated Login and Leave Approval workflows using Selenium WebDriver + Java.",
+        "Generated automation execution reports.",
+      ],
+      achievements: [
+        "Reduced manual effort in regression testing by automating repetitive workflows (~15–20% time saving).",
+      ],
     },
   ];
 
@@ -53,8 +108,7 @@ const Portfolio: React.FC = () => {
             </h2>
             <div className="w-20 h-1 bg-blue-600 mx-auto mb-6"></div>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Professional experience and key responsibilities from my career
-              journey
+              Professional experience and key responsibilities from my career journey
             </p>
           </div>
 
@@ -72,28 +126,45 @@ const Portfolio: React.FC = () => {
                   <span className="text-sm text-gray-500">{exp.period}</span>
                 </div>
                 <h4 className="text-lg font-medium text-gray-800 mb-2">
-                  {exp.company}
+                  {exp.company} {exp.location ? `- ${exp.location}` : ""}
                 </h4>
-                <p className="text-gray-600 mb-4 leading-relaxed">
-                  {exp.description}
-                </p>
-                <div className="flex flex-wrap gap-2">
-                  {exp.technologies.map((tech, techIndex) => (
-                    <span
-                      key={techIndex}
-                      className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-xs font-medium"
-                    >
-                      {tech}
-                    </span>
+                <p className="text-gray-600 mb-4 leading-relaxed">{exp.description}</p>
+
+                <h5 className="font-semibold text-gray-700 mb-2">Key Responsibilities:</h5>
+                <ul className="list-disc list-inside mb-4 text-gray-700">
+                  {exp.responsibilities.map((r, i) => (
+                    <li key={i}>{r}</li>
                   ))}
-                </div>
+                </ul>
+
+                {exp.automationContribution && (
+                  <>
+                    <h5 className="font-semibold text-gray-700 mb-2">Automation Contribution:</h5>
+                    <ul className="list-disc list-inside mb-4 text-gray-700">
+                      {exp.automationContribution.map((a, i) => (
+                        <li key={i}>{a}</li>
+                      ))}
+                    </ul>
+                  </>
+                )}
+
+                {exp.achievements && (
+                  <>
+                    <h5 className="font-semibold text-gray-700 mb-2">Achievements:</h5>
+                    <ul className="list-disc list-inside text-gray-700">
+                      {exp.achievements.map((a, i) => (
+                        <li key={i}>{a}</li>
+                      ))}
+                    </ul>
+                  </>
+                )}
               </div>
             ))}
           </div>
         </div>
       </section>
 
-           {/* Education Section */}
+      {/* Education Section */}
       <section id="education" className="py-20 bg-white">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
@@ -104,42 +175,38 @@ const Portfolio: React.FC = () => {
             </p>
           </div>
 
-          <div className="bg-gradient-to-r from-blue-50 to-indigo-50 border border-gray-200 rounded-xl shadow-md hover:shadow-xl transition duration-300 p-8 max-w-3xl mx-auto">
-            <div className="flex items-center justify-between mb-4">
-              <h3 className="text-2xl font-semibold text-blue-700 flex items-center space-x-2">
-                <GraduationCap size={26} />
-                <span>Bachelor of Technology</span>
-              </h3>
-              <span className="text-sm text-gray-500">2019 – 2022</span>
+          {education.map((edu, idx) => (
+            <div
+              key={idx}
+              className="bg-gradient-to-r from-blue-50 to-indigo-50 border border-gray-200 rounded-xl shadow-md hover:shadow-xl transition duration-300 p-8 max-w-3xl mx-auto mb-8"
+            >
+              <div className="flex items-center justify-between mb-4">
+                <h3 className="text-2xl font-semibold text-blue-700 flex items-center space-x-2">
+                  <GraduationCap size={26} />
+                  <span>{edu.degree}</span>
+                </h3>
+                <span className="text-sm text-gray-500">{edu.period}</span>
+              </div>
+              <h4 className="text-lg font-medium text-gray-800 mb-3">{edu.college}</h4>
+              <p className="text-gray-600 mb-4 leading-relaxed">{edu.description}</p>
+              <ul className="list-disc list-inside text-gray-700 space-y-2">
+                {edu.highlights.map((h, i) => (
+                  <li key={i}>{h}</li>
+                ))}
+              </ul>
             </div>
-            <h4 className="text-lg font-medium text-gray-800 mb-3">
-              Balaji Institute of Technology & Science (BITS), Warangal
-            </h4>
-            <p className="text-gray-600 mb-4 leading-relaxed">
-              Gained strong academic foundations in engineering concepts,
-              analytical thinking, and structured project work. Built
-              problem-solving skills that support my career in software testing
-              and quality assurance.
-            </p>
-            <ul className="list-disc list-inside text-gray-700 space-y-2">
-              <li>Developed logical and analytical reasoning skills</li>
-              <li>Gained exposure to structured projects and documentation</li>
-              <li>Transitioned into IT with a focus on software testing</li>
-            </ul>
-          </div>
+          ))}
         </div>
       </section>
 
-
-      {/* Portfolio Section */}
+      {/* Portfolio Projects Section */}
       <section id="portfolio" className="py-20 bg-gray-50">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-800 mb-4">Projects</h2>
             <div className="w-20 h-1 bg-blue-600 mx-auto mb-6"></div>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              A selection of projects that showcase my testing expertise and
-              quality assurance skills
+              A selection of projects that showcase my testing expertise and quality assurance skills
             </p>
           </div>
 
@@ -151,7 +218,6 @@ const Portfolio: React.FC = () => {
                   project.featured ? "lg:col-span-2" : ""
                 }`}
               >
-                {/* Project Image */}
                 <div className="relative overflow-hidden">
                   <img
                     src={project.image}
@@ -161,12 +227,9 @@ const Portfolio: React.FC = () => {
                   <div className="absolute inset-0 bg-blue-900 bg-opacity-0 hover:bg-opacity-20 transition-all duration-300"></div>
                 </div>
 
-                {/* Project Content */}
                 <div className="p-6">
                   <div className="flex items-center justify-between mb-3">
-                    <h3 className="text-xl font-semibold text-gray-800">
-                      {project.title}
-                    </h3>
+                    <h3 className="text-xl font-semibold text-gray-800">{project.title}</h3>
                     {project.featured && (
                       <span className="bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-xs font-medium">
                         Featured
@@ -174,11 +237,8 @@ const Portfolio: React.FC = () => {
                     )}
                   </div>
 
-                  <p className="text-gray-600 mb-4 leading-relaxed">
-                    {project.description}
-                  </p>
+                  <p className="text-gray-600 mb-4 leading-relaxed">{project.description}</p>
 
-                  {/* Technologies */}
                   <div className="flex flex-wrap gap-2 mb-6">
                     {project.technologies.map((tech, techIndex) => (
                       <span
@@ -190,7 +250,6 @@ const Portfolio: React.FC = () => {
                     ))}
                   </div>
 
-                  {/* Project Links */}
                   <div className="flex space-x-4">
                     <a
                       href={project.githubUrl}
@@ -212,7 +271,6 @@ const Portfolio: React.FC = () => {
             ))}
           </div>
 
-          {/* View More Button */}
           <div className="text-center mt-12">
             <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-full font-medium transition-all duration-200 transform hover:scale-105 shadow-lg">
               View All Projects on GitHub
