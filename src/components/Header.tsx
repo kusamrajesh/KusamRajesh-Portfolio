@@ -72,7 +72,7 @@ const Header: React.FC<HeaderProps> = ({ activeSection }) => {
           <div className="hidden md:block">
           <a
   href="https://github.com/kusamrajesh/Rajesh-Resume/raw/main/KusamRajesh_Testing_2022.pdf" // raw link for direct download
-  download="KusamRajesh_Testing_2022.pdf"
+  download="Rajesh_Testing_2025.docx"
   target="_blank"
   rel="noopener noreferrer"
   className="bg-blue-700 hover:bg-blue-800 text-white px-6 py-2 rounded-full text-sm font-medium transition-all duration-200 transform hover:scale-105 flex items-center space-x-2"
