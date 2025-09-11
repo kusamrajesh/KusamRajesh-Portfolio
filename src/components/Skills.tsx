@@ -3,17 +3,46 @@ import React from 'react';
 const Skills: React.FC = () => {
   const skillCategories = [
     {
-      title: "Software Tester",
+      title: "Automation & Tools",
       skills: [
-        { name: "Manual", color: "bg-blue-500" },
-        { name: "Automation", color: "bg-blue-600" },
-        { name: "Selenium", color: "bg-yellow-500" },
-        { name: "Core Java", color: "bg-orange-500" },
-        { name: "HTML", color: "bg-teal-500" },
-      ]
+        { name: "Selenium WebDriver", color: "bg-blue-500" },
+        { name: "TestNG (basic)", color: "bg-blue-600" },
+      ],
     },
-   
-    
+    {
+      title: "Programming Languages",
+      skills: [
+        { name: "Java (basic)", color: "bg-orange-500" },
+      ],
+    },
+    {
+      title: "Databases",
+      skills: [
+        { name: "MySQL (basic queries)", color: "bg-green-500" },
+      ],
+    },
+    {
+      title: "Web Technologies",
+      skills: [
+        { name: "HTML", color: "bg-teal-500" },
+        { name: "CSS", color: "bg-indigo-500" },
+        { name: "JavaScript (basic)", color: "bg-yellow-500" },
+      ],
+    },
+    {
+      title: "Operating Systems",
+      skills: [
+        { name: "Windows", color: "bg-gray-500" },
+        { name: "Linux (basic commands)", color: "bg-gray-700" },
+      ],
+    },
+    {
+      title: "Methodologies",
+      skills: [
+        { name: "Agile Scrum", color: "bg-purple-500" },
+        { name: "Waterfall", color: "bg-purple-700" },
+      ],
+    },
   ];
 
   return (
@@ -23,11 +52,11 @@ const Skills: React.FC = () => {
           <h2 className="text-4xl font-bold text-gray-800 mb-4">Skills & Expertise</h2>
           <div className="w-20 h-1 bg-blue-600 mx-auto mb-6"></div>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-           A comprehensive toolkit of modern software testing tools, frameworks, and methodologies.”
+            A comprehensive toolkit of modern software testing tools, frameworks, and methodologies.
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-3 gap-8">
+        <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-8">
           {skillCategories.map((category, categoryIndex) => (
             <div 
               key={categoryIndex}
