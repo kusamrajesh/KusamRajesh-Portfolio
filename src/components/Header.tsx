@@ -69,7 +69,7 @@ const Header: React.FC<HeaderProps> = ({ activeSection }) => {
           </nav>
 
           {/* Resume Download Button */} 
-          <div className="hidden md:block">
+          <div className="hidden md:block"> 
           <a
   href="https://github.com/kusamrajesh/KusamRajesh-Portfolio/blob/20428f1424e01602791cf0b48f5bb3024e561e84/Rajesh_Testing_2025.docx" // raw link for direct download 
   download="Rajesh_Testing_2025.docx" 
