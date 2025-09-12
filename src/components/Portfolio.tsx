@@ -15,7 +15,7 @@ const Portfolio: React.FC = () => {
       liveUrl: "https://adactinhotelapp.com",
        featured: true, 
     },
-   {
+    {
   title: "EatClub.in – Online Food Ordering & Delivery Platform",
   description:
     "End-to-end food ordering and delivery application covering Customer, Vendor, Delivery Partner, Admin, and Payments modules. Tested web + mobile workflows with manual, API, and database validations.",
@@ -49,17 +49,27 @@ const Portfolio: React.FC = () => {
           "Automated Login, Search Hotel, and Booking Confirmation modules using Selenium WebDriver + Java.",
         ],
       },
-      {
-        name: "HR Management System (HRMS)",
-        domain: "HR / Enterprise Solutions",
-        description:
-          "HRMS manages Employee Information, Leave Requests, Payroll, and Recruitment. QA scope included manual and automated testing.",
-        responsibilities: [
-          "Tested end-to-end workflows: Employee Onboarding → Leave Requests → Payroll.",
-          "Designed and executed test scenarios, test cases, and prepared RTM.",
-          "Performed Functional, Regression, and Integration testing across modules.",
-          "Automated Login and Leave Approval workflows using Selenium WebDriver + Java.",
-        ],
+        {
+    name: "EatClub.in – Online Food Ordering & Delivery Platform",
+    domain: "E-commerce / FoodTech",
+    description:
+      "End-to-end food ordering and delivery platform with Customer, Vendor, Delivery Partner, Admin, and Payments modules.",
+    responsibilities: [
+      "Reviewed requirements and created detailed test cases for Customer, Vendor, Delivery Partner, Admin, Payments, and Notifications modules.",
+      "Performed manual testing (Functional, Integration, Regression, Sanity) on web and mobile.",
+      "Conducted API testing using Postman for order creation, payments, and vendor workflows.",
+      "Validated payment gateway flows (UPI, wallets, refunds).",
+      "Performed cross-browser and cross-device testing (Chrome, Firefox, Edge, Android, iOS).",
+      "Executed SQL queries in MySQL for validating transactions and order data.",
+      "Logged and tracked issues in JIRA; participated in bug triage meetings.",
+    ],
+    technologies: ["Manual Testing", "API Testing", "MySQL"],
+    tools: ["JIRA", "Postman", "TestRail", "Excel"],
+    duration: "Jan 2023 – Dec 2023",
+    role: "Software Tester",
+  },
+];
+
       },
     ],
   };
