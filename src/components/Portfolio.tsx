@@ -13,7 +13,7 @@ const Portfolio: React.FC = () => {
       technologies: ["Selenium", "Java", "TestNG"],
       githubUrl: "https://github.com/kusamrajesh/KusamRajesh-Portfolio",
       liveUrl: "https://adactinhotelapp.com",
-      // featured: true, 
+       featured: true, 
     },
     {
       title: "HR Management System (HRMS)",
