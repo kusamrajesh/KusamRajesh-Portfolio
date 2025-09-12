@@ -4,17 +4,23 @@ import { ExternalLink, Github, Briefcase, GraduationCap } from "lucide-react";
 const Portfolio: React.FC = () => {
   // -------------------- Projects --------------------
   const projects = [
-    {
-      title: "Adactin Hotel Management Application",
-      description:
-        "Hotel booking platform enabling users to register, login, search, book, and cancel hotels online. QA scope included functional and regression testing manually and automating key flows using Selenium WebDriver + Java.",
-      image:
-        "https://images.pexels.com/photos/271639/pexels-photo-271639.jpeg?auto=compress&cs=tinysrgb&w=800",
-      technologies: ["Selenium", "Java", "TestNG"],
-      githubUrl: "https://github.com/kusamrajesh/KusamRajesh-Portfolio",
-      liveUrl: "https://adactinhotelapp.com",
-       featured: true, 
-    },
+{
+  title: "Adactin Hotel Management Application",
+  description:
+    "Hotel booking platform enabling users to register, login, search, book, and cancel hotels online. QA scope included functional and regression testing manually and automating key flows using Selenium WebDriver + Java.",
+  image:
+    "https://images.pexels.com/photos/271639/pexels-photo-271639.jpeg?auto=compress&cs=tinysrgb&w=800",
+  technologies: {
+    frontend: ["HTML", "CSS", "JavaScript"],
+    middleware: ["Java (Servlets, JSP)"],
+    backend: ["MySQL Database"],
+    testingTools: ["Selenium WebDriver", "TestNG", "JIRA"],
+  },
+  githubUrl: "https://github.com/kusamrajesh/KusamRajesh-Portfolio",
+  liveUrl: "https://adactinhotelapp.com",
+  featured: true,
+},
+
     {
   title: "EatClub.in – Online Food Ordering & Delivery Platform",
   description:
