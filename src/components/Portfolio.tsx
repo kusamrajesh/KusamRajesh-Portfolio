@@ -19,7 +19,7 @@ const Portfolio: React.FC = () => {
   githubUrl: "https://github.com/kusamrajesh/KusamRajesh-Portfolio",
   liveUrl: "https://adactinhotelapp.com",
   featured: true,
-},
+} 
 
     {
   title: "EatClub.in – Online Food Ordering & Delivery Platform",
