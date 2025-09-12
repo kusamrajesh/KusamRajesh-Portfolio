@@ -49,27 +49,19 @@ const Portfolio: React.FC = () => {
           "Automated Login, Search Hotel, and Booking Confirmation modules using Selenium WebDriver + Java.",
         ],
       },
-        {
-    name: "EatClub.in – Online Food Ordering & Delivery Platform",
-    domain: "E-commerce / FoodTech",
-    description:
-      "End-to-end food ordering and delivery platform with Customer, Vendor, Delivery Partner, Admin, and Payments modules.",
-    responsibilities: [
-      "Reviewed requirements and created detailed test cases for Customer, Vendor, Delivery Partner, Admin, Payments, and Notifications modules.",
-      "Performed manual testing (Functional, Integration, Regression, Sanity) on web and mobile.",
-      "Conducted API testing using Postman for order creation, payments, and vendor workflows.",
-      "Validated payment gateway flows (UPI, wallets, refunds).",
-      "Performed cross-browser and cross-device testing (Chrome, Firefox, Edge, Android, iOS).",
-      "Executed SQL queries in MySQL for validating transactions and order data.",
-      "Logged and tracked issues in JIRA; participated in bug triage meetings.",
-    ],
-    technologies: ["Manual Testing", "API Testing", "MySQL"],
-    tools: ["JIRA", "Postman", "TestRail", "Excel"],
-    duration: "Jan 2023 – Dec 2023",
-    role: "Software Tester",
-  },
-];
-
+      {
+  name: "EatClub.in – Online Food Ordering & Delivery Platform",
+  domain: "E-commerce / FoodTech",
+  description:
+    "End-to-end food ordering and delivery platform with Customer, Vendor, Delivery Partner, Admin, and Payments modules. QA scope included manual, API, and database testing.",
+  responsibilities: [
+    "Reviewed requirements and created detailed test cases for Customer, Vendor, Delivery Partner, Admin, Payments, and Notifications modules.",
+    "Performed Functional, Integration, Regression, and Sanity testing on web and mobile platforms.",
+    "Conducted API testing using Postman for order creation, payments, and vendor workflows.",
+    "Validated payment gateway flows (UPI, wallets, refunds) and transaction records in MySQL.",
+    "Executed cross-browser testing (Chrome, Firefox, Edge) and cross-device testing (Android, iOS).",
+    "Logged and tracked issues in JIRA; participated in bug triage meetings and daily stand-ups.",
+  ],
       },
     ],
   };
