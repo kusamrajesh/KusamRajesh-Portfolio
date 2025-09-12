@@ -1,35 +1,42 @@
 import React from "react";
-import { ExternalLink, Github, Briefcase, GraduationCap } from "lucide-react";
+import { ExternalLink, Github, Briefcase } from "lucide-react";
 
 const Portfolio: React.FC = () => {
   // -------------------- Projects --------------------
   const projects = [
     {
       title: "Adactin Hotel Management Application",
-      
       description:
         "Hotel booking platform enabling users to register, login, search, book, and cancel hotels online. QA scope included functional and regression testing manually and automating key flows using Selenium WebDriver + Java.",
       image:
         "https://images.pexels.com/photos/271639/pexels-photo-271639.jpeg?auto=compress&cs=tinysrgb&w=800",
-      technologies: ["Selenium", "Java", "TestNG"],
+      technologies: {
+        frontend: ["HTML", "CSS", "JavaScript"],
+        middleware: ["Java (Servlets, JSP)"],
+        backend: ["MySQL Database"],
+        testingTools: ["Selenium WebDriver", "TestNG", "JIRA"],
+      },
       githubUrl: "https://github.com/kusamrajesh/KusamRajesh-Portfolio",
       liveUrl: "https://adactinhotelapp.com",
-       featured: true, 
-    }, 
+      featured: true,
+    },
     {
-  title: "EatClub.in – Online Food Ordering & Delivery Platform",
-  description:
-    "End-to-end food ordering and delivery application covering Customer, Vendor, Delivery Partner, Admin, and Payments modules. Tested web + mobile workflows with manual, API, and database validations.",
-  image:
-    "https://images.pexels.com/photos/2619967/pexels-photo-2619967.jpeg?auto=compress&cs=tinysrgb&w=800",
-  technologies: ["Manual Testing", "API Testing", "Postman", "MySQL", "JIRA"],
-  githubUrl: "https://github.com/kusamrajesh/KusamRajesh-Portfolio",
-  liveUrl: "#",
-}
-
+      title: "EatClub.in – Online Food Ordering & Delivery Platform",
+      description:
+        "End-to-end food ordering and delivery application covering Customer, Vendor, Delivery Partner, Admin, and Payments modules. Tested web + mobile workflows with manual, API, and database validations.",
+      image:
+        "https://images.pexels.com/photos/2619967/pexels-photo-2619967.jpeg?auto=compress&cs=tinysrgb&w=800",
+      technologies: {
+        frontend: ["ReactJS", "HTML", "CSS"],
+        backend: ["Node.js", "MySQL Database"],
+        testingTools: ["Manual Testing", "API Testing", "Postman", "JIRA"],
+      },
+      githubUrl: "https://github.com/kusamrajesh/KusamRajesh-Portfolio",
+      liveUrl: "#",
+    },
   ];
 
-  // -------------------- Work Experience (Single Role, Two Projects) --------------------
+  // -------------------- Work Experience --------------------
   const experience = {
     role: "Associate Software Engineer",
     company: "ATTIVO TECHNOLOGY SOLUTIONS Pvt. Ltd.",
@@ -51,18 +58,18 @@ const Portfolio: React.FC = () => {
         ],
       },
       {
-  name: "EatClub.in – Online Food Ordering & Delivery Platform",
-  domain: "E-commerce / FoodTech",
-  description:
-    "End-to-end food ordering and delivery platform with Customer, Vendor, Delivery Partner, Admin, and Payments modules. QA scope included manual, API, and database testing.",
-  responsibilities: [
-    "Reviewed requirements and created detailed test cases for Customer, Vendor, Delivery Partner, Admin, Payments, and Notifications modules.",
-    "Performed Functional, Integration, Regression, and Sanity testing on web and mobile platforms.",
-    "Conducted API testing using Postman for order creation, payments, and vendor workflows.",
-    "Validated payment gateway flows (UPI, wallets, refunds) and transaction records in MySQL.",
-    "Executed cross-browser testing (Chrome, Firefox, Edge) and cross-device testing (Android, iOS).",
-    "Logged and tracked issues in JIRA; participated in bug triage meetings and daily stand-ups.",
-  ],
+        name: "EatClub.in – Online Food Ordering & Delivery Platform",
+        domain: "E-commerce / FoodTech",
+        description:
+          "End-to-end food ordering and delivery platform with Customer, Vendor, Delivery Partner, Admin, and Payments modules. QA scope included manual, API, and database testing.",
+        responsibilities: [
+          "Reviewed requirements and created detailed test cases for Customer, Vendor, Delivery Partner, Admin, Payments, and Notifications modules.",
+          "Performed Functional, Integration, Regression, and Sanity testing on web and mobile platforms.",
+          "Conducted API testing using Postman for order creation, payments, and vendor workflows.",
+          "Validated payment gateway flows (UPI, wallets, refunds) and transaction records in MySQL.",
+          "Executed cross-browser testing (Chrome, Firefox, Edge) and cross-device testing (Android, iOS).",
+          "Logged and tracked issues in JIRA; participated in bug triage meetings and daily stand-ups.",
+        ],
       },
     ],
   };
@@ -148,14 +155,24 @@ const Portfolio: React.FC = () => {
 
                   <p className="text-gray-600 mb-4 leading-relaxed">{project.description}</p>
 
-                  <div className="flex flex-wrap gap-2 mb-6">
-                    {project.technologies.map((tech, techIndex) => (
-                      <span
-                        key={techIndex}
-                        className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-xs font-medium"
-                      >
-                        {tech}
-                      </span>
+                  {/* Technologies grouped by category */}
+                  <div className="mb-6">
+                    {Object.entries(project.technologies).map(([category, techs], idx) => (
+                      <div key={idx} className="mb-2">
+                        <p className="text-sm font-semibold text-gray-700 capitalize">
+                          {category}:
+                        </p>
+                        <div className="flex flex-wrap gap-2 mt-1">
+                          {techs.map((tech, techIndex) => (
+                            <span
+                              key={techIndex}
+                              className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-xs font-medium"
+                            >
+                              {tech}
+                            </span>
+                          ))}
+                        </div>
+                      </div>
                     ))}
                   </div>
 
