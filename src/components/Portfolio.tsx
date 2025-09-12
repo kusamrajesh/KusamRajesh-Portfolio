@@ -15,16 +15,17 @@ const Portfolio: React.FC = () => {
       liveUrl: "https://adactinhotelapp.com",
        featured: true, 
     },
-    {
-      title: "HR Management System (HRMS)",
-      description:
-        "Web-based HR application for managing Employee Information, Leave Requests, Payroll, and Recruitment. Included manual and automated testing of end-to-end workflows using Selenium + Java.",
-      image:
-        "https://images.pexels.com/photos/3184303/pexels-photo-3184303.jpeg?auto=compress&cs=tinysrgb&w=800",
-      technologies: ["Selenium", "Java"],
-      githubUrl: "https://github.com/kusamrajesh/KusamRajesh-Portfolio",
-      liveUrl: "#",
-    },
+   {
+  title: "EatClub.in – Online Food Ordering & Delivery Platform",
+  description:
+    "End-to-end food ordering and delivery application covering Customer, Vendor, Delivery Partner, Admin, and Payments modules. Tested web + mobile workflows with manual, API, and database validations.",
+  image:
+    "https://images.pexels.com/photos/2619967/pexels-photo-2619967.jpeg?auto=compress&cs=tinysrgb&w=800",
+  technologies: ["Manual Testing", "API Testing", "Postman", "MySQL", "JIRA"],
+  githubUrl: "https://github.com/kusamrajesh/KusamRajesh-Portfolio",
+  liveUrl: "#",
+}
+
   ];
 
   // -------------------- Work Experience (Single Role, Two Projects) --------------------
