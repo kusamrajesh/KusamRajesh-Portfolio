@@ -110,7 +110,7 @@ const Header: React.FC<HeaderProps> = ({ activeSection }) => {
                   {item.label}
                 </button>
               ))}
-              <div className="px-4 pt-4">
+              <div className="px-4 pt-4"> 
                 <a
                   href="https://github.com/kusamrajesh/KusamRajesh-Portfolio/blob/20428f1424e01602791cf0b48f5bb3024e561e84/Rajesh_Testing_2025.docx" // raw link for direct download 
   download="Rajesh_Testing_2025.docx" 
